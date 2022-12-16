@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Converter</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <header>Converter</header>
+        <form action="#">
+            <div class="num">
+                <p>Enter a Number</p>
+                <input type="text" placeholder="Please enter a Number" class="number">
+            </div>
+            <div class="drop-list">
+                <div class="from">
+                    <p>From</p>
+                    <div class="select-box">
+                        <select id="input0">
+                            <option value="decimal">Decimal</option>
+                            <option value="binary">Binary</option>
+                            <option value="octal">Octal</option>
+                            <option value="hexadecimal">Hexadecimal</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="to">
+                    <p>To</p>
+                    <div class="select-box">
+                        <select id="input1">
+                            <option value="decimal">Decimal</option>
+                            <option value="binary">Binary</option>
+                            <option value="octal">Octal</option>
+                            <option value="hexadecimal">Hexadecimal</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <div class="converted-value">Getting.....</div>
+            <button class="convertbtn">Get Converted Value</button>
+            <button style="margin-top:20px" id="swapbtn">Swap</button>
+
+        </form>
+    </div>
+    <script src="code.js"></script>
+</body>
+
+</html>
