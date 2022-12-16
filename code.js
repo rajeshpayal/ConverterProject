@@ -157,10 +157,19 @@ const callback = function () {
 };
 document.querySelector(".convertbtn").addEventListener("click", callback);
 
+document.querySelector(".convertbtn").addEventListener("click", () => {
+  document.title = `From ${input0.value.toUpperCase()} to ${input1.value.toUpperCase()} is ${
+    result.innerHTML
+  }`;
+});
+
 document.querySelector("#swapbtn").addEventListener("click", () => {
   var temp = input0.value;
   input0.value = input1.value;
   input1.value = temp;
   reqNumber.value = "";
   result.innerHTML = "Getting...";
+  document.title = `From ${input0.value.toUpperCase()} to ${input1.value.toUpperCase()} is ${
+    result.textContent
+  }`;
 });
